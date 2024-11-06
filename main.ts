@@ -43,6 +43,8 @@ function reading () {
 let myData = ""
 let myID = ""
 let text_list: string[] = []
+pins.setAudioPin(DigitalPin.P0)
+music._playDefaultBackground(music.builtInPlayableMelody(Melodies.BaDing), music.PlaybackMode.InBackground)
 init()
 basic.forever(function () {
     if (MFRC522.getID() == 730974132981) {
