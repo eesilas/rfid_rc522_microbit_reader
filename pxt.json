@@ -1,6 +1,6 @@
 {
     "name": "RFID_RC522_microbit_reader",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "",
     "dependencies": {
         "core": "*",
