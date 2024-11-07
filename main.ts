@@ -1,10 +1,11 @@
 input.onButtonPressed(Button.A, function () {
+    basic.showIcon(IconNames.Snake)
+    radio.sendNumber(123)
+})
+input.onButtonPressed(Button.AB, function () {
     serial.writeLine("ID:" + MFRC522.getID())
     MFRC522.write("12345")
     serial.writeLine("Data:" + MFRC522.read())
-})
-input.onButtonPressed(Button.AB, function () {
-	
 })
 input.onButtonPressed(Button.B, function () {
     myID = "ID:" + MFRC522.getID()
